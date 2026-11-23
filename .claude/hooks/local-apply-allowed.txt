@@ -1,0 +1,13 @@
+# Folders where agents may run Terraform apply / cfw / wrangler deploy / Cloudflare writes
+# locally instead of being blocked. One folder per line; everything under it counts.
+# Use this for repos that are NOT pipeline-managed.
+#
+#   D:\Git\Personal\A-Repo          ask mode: each change prompts you
+#   allow: D:\Git\Personal\A-Repo   allow mode: changes run without a prompt
+# Logins, account switching and token reads stay blocked everywhere.
+#
+# Agent edits to this file always prompt you first.
+#
+# Examples:
+# D:\Git\Personal\A-Repo
+# allow: D:\Git\Personal\Sandbox
